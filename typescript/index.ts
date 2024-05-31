@@ -40,3 +40,14 @@ const myRectange = new Rectangle(4,6);
 // console.log(myCircle.perimeter());
 console.log('Area of circle',calculateTotalArea(myCircle));
 console.log('Area of rectangle',calculateTotalArea(myRectange));
+
+
+/* Advantages of using Abstraction
+
+Simplicity: Hidle Complex details.
+Maintainability: changes don't effect application.
+Reusability: Generic classes can be reused.
+Modularity:Each object manages its own behavior
+Security:  Hide internal state and implementation.
+
+*/
