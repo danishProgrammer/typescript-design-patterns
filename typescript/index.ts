@@ -1,17 +1,16 @@
-// Polymorphism : Objects of different classes to be treated as objects of a common superclass.
+class Animal{
+    constructor(public name:string){}
 
-/* Different Types of polymorphisim
- 1) Subtype : aka inheritance or implementation polymorphism 
- 2) Parametric : aka Generics
- 3) Adhoc : aka function overloading or operator overloading
+    move(distance:number){
+        console.log(`${this.name} moved ${distance} meters`);
+    }
+}
 
-Realtime use case of Polymorphisim: Express Js
+class Dog extends Animal{
+    constructor(public name:string = 'dog'){
+        super(name);
+    }
+}
 
-Implementation example can be used as same used in Abstraction.
-
-Advantages of Polymorphisim
- 1) Code Reusability.
- 2) Interface consistency
- 3) Flexibility & Scalability.
- 4) Reduced complexity and Enhanced collaboration
- */
+const myDog = new Dog();
+myDog.move(10);
